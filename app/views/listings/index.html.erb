@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Auction Items</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @listings.each do |listing| %>
+      Name: <%= link_to listing.name, listing %>
+      Start Bid: <%= number_to_currency(listing.start_bid, precision: 2) %>
+      Description: <%= listing.description %>
+      <br>
+        <%= link_to 'Show', listing %>
+        <%= link_to 'Edit', edit_listing_path(listing) %>
+        <%= link_to 'Destroy', listing, method: :delete, data: { confirm: 'Are you sure?' } %>
+      <br>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Listing', new_listing_path %>
