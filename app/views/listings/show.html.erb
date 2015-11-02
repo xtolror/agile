@@ -1,8 +1,7 @@
 <p id="notice"><%= notice %></p>
-
-<%= @listing.name %>
-<%= number_to_currency(@listing.start_bid, precision: 2) %>
-<%= @listing.description %>
+    <%= @listing.name %>
+    <%= number_to_currency(@listing.start_bid, precision: 2) %>
+    <%= @listing.description %>
 
 <%= link_to 'Edit', edit_listing_path(@listing) %> |
 <%= link_to 'Back', listings_path %>
