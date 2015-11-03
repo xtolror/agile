@@ -7,15 +7,19 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <%= render 'layouts/header' %>
-  <div class="container">
-    <div class="watch_list">
-      <%= render 'layouts/aside' %>
-    </div>
-    <div class="main_content">
-      <%= yield %>
+  <div id="site_container">
+    <%= render 'layouts/header' %>
+    <div class="container">
+      <div class="charity_banner">
+        
+      </div>
+      <div class="watch_list">
+        <%= render 'layouts/aside' %>
+      </div>
+      <div class="main_content">
+        <%= yield %>
+      </div>
     </div>
   </div>
-
 </body>
 </html>

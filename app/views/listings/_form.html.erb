@@ -10,15 +10,21 @@
       </ul>
     </div>
   <% end %>
-  
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-  
-  <%= f.label :start_bid %>
-  <%= f.text_field :start_bid %>
-  
-  <%= f.label :description %>
-  <%= f.text_area :description %>
+  <div class="row">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+  <div class="row">
+    <%= f.file_field :image %>
+  </div>
+  <div class="row">
+    <%= f.label :start_bid %>
+    <%= f.text_field :start_bid %>
+  </div>
+  <div class="row">
+    <%= f.label :description %>
+    <%= f.text_area :description %>
+  </div>  
 
   <div class="actions">
     <%= f.submit %>

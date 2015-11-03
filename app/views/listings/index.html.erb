@@ -6,7 +6,7 @@
 <% @listings.each do |listing| %>
   <div class="item_listing">
     <div class="item_thumbnail">
-        
+        <%= image_tag listing.image_url(:thumb).to_s %>
     </div>
     <div class="item_attributes">
       <div class="item_head">
@@ -17,7 +17,7 @@
           Auction starts in [TIME_TILL_AUCTION]
         </div>
     </div>
-    
+    <%= link_to "Delete", listing, method: :delete, data: {confirm: "Are you sure?"} %>
     <br>
   </div><br>
 <% end %>
