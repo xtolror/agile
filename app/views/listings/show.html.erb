@@ -1,38 +1,39 @@
-<p id="notice"><%= notice %></p>
+<div class="page_header">
     <h3><%= @listing.name %></h3>
-    <hr>
-    <div class="show_top">
-        <div class="image_display">
-            <div id="image_surround">
-                <%= image_tag @listing.image_url(:show_image).to_s %>
-            </div>
+</div>
+<hr>
+<div class="show_top">
+    <div class="image_display">
+        <div id="image_surround">
+            <%= image_tag @listing.image_url(:show_image).to_s %>
         </div>
-        <div class="bid_box">
-            <div id="auction_time">
-                Time Until Auction: <%= get_days(Time.now.utc) %> Days <%= get_minutes(Time.now.utc) %> Minutes
-            </div>
-            <div id="current_bid">
-                Current Bid: <strong><%= number_to_currency(@listing.start_bid, precision: 2) %></strong>
-            </div>
-            <div id="bid_fields">
-                <div class="surround">
-                    <div id="bid_text_field">
-                        <%= text_field :bid, :place_bid, :disabled => true, class: "form-control" %>
-                    </div>
-                    <div id="bid_button">
-                        <%= link_to "Place Bid", "#", :disabled => true, class: "btn btn-primary btn-sm", :method => :post %>
-                    </div>
+    </div>
+    <div class="bid_box">
+        <div id="auction_time">
+            Time Until Auction: <%= get_days(Time.now.utc) %> Days <%= get_minutes(Time.now.utc) %> Minutes
+        </div>
+        <div id="current_bid">
+            Current Bid: <strong><%= number_to_currency(@listing.start_bid, precision: 2) %></strong>
+        </div>
+        <div id="bid_fields">
+            <div class="surround">
+                <div id="bid_text_field">
+                    <%= text_field :bid, :place_bid, :disabled => true, class: "form-control" %>
+                </div>
+                <div id="bid_button">
+                    <%= link_to "Place Bid", "#", :disabled => true, class: "btn btn-primary btn-sm", :method => :post %>
                 </div>
             </div>
-            <div id="watch">
-                <%= link_to "Add to Watch List", "#" %>
-            </div>
+        </div>
+        <div id="watch">
+            <%= link_to "Add to Watch List", "#" %>
         </div>
     </div>
-    <div class="description_box">
-        <h3>Description</h3>
-        <%= @listing.description %>
-    </div>
+</div>
+<div class="description_box">
+    <h3>Description</h3>
+    <%= @listing.description %>
+</div>
 
 <%= link_to 'Edit', edit_listing_path(@listing) %> |
 <%= link_to 'Back', listings_path %>

@@ -1,6 +1,11 @@
-<p id="notice"><%= notice %></p>
 
-<h3>Listing Auction Items</h3>
+
+<div class="page_header">
+  <h3>Listing Auction Items</h3>
+</div>
+<div class="create_button">
+  <%= link_to 'New Listing', new_listing_path, class: "btn btn-primary btn-xs" %>
+</div>
 <hr>
 
 <% @listings.each do |listing| %>
@@ -20,8 +25,7 @@
     <%= link_to "Delete", listing, method: :delete, data: {confirm: "Are you sure?"} %>
     <br>
   </div><br>
+  <hr>
 <% end %>
 
 <br>
-
-<%= link_to 'New Listing', new_listing_path %>

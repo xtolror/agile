@@ -6,9 +6,18 @@
     margin: 0px auto;
 }
 #logo {
-
+    color: #000;
+}
+#logo:hover {
+    color: #858383;
+    text-decoration: none;
+    background-color: transparent;
+}
+#nac{
+    color: #000;
 }
 #nav li{
+    color: #000;
     display: inline;
     list-style-type: none;
 }
@@ -35,8 +44,8 @@
 .watch_list{
     width: 15%;
     height: 100%;
-    border-style: solid;
-    border-width: 1px;
+    //border-style: solid;
+    //border-width: 1px;
     margin: 1px auto;
     display: inline-block;
 }
@@ -47,26 +56,36 @@
     border-width: 1px;
     margin: 1px auto;
 }
+.page_header{
+    display: inline-block;
+}
+hr{
+    border-top: 1px solid #000;
+}
+.create_button{
+    display: inline-block;
+    margin: auto 0;
+}
 .main_content{
     width: 84.5%;
     float: right;
-    border-style: solid;
-    border-width: 1px;
+    //border-style: solid;
+    //border-width: 1px;
     margin: 1px auto;
     display: inline-block;
     vertical-align: top;
 }
 .item_listing{
     width: 98%;
-    border-style: solid;
-    border-width: 3px;
+    //border-style: solid;
+    //border-width: 3px;
     margin: 2px auto 2px auto;
 }
 .item_thumbnail{
     width: auto;
     height: auto;
-    border-style: solid;
-    border-width: 2px;
+    //border-style: solid;
+    //border-width: 2px;
     margin: 2px;
     display: inline-block;
 }
@@ -74,8 +93,8 @@
     display: inline-block;
     vertical-align: top;
     width: calc(100% - 200px);
-    border-style: solid;
-    border-width: 2px;
+    //border-style: solid;
+    //border-width: 2px;
     margin: 2px;
     
 }
@@ -89,16 +108,16 @@
 .show_top{
     margin: 2px;
     width: calc(100% - 8px);
-    border-style: solid;
-    border-width: 1px;
+    //border-style: solid;
+    //border-width: 1px;
 }
 .image_display{
     margin: auto;
     width: calc(50% - 10px);
     height: auto;
     display: inline-block;
-    border-style: solid;
-    border-width: 1px;
+    //border-style: solid;
+    //border-width: 1px;
 }
 #image_surround{
     width: 300px;
@@ -110,14 +129,14 @@
     height: 100%;
     vertical-align: middle;
     display: inline-block;
-    border-style: solid;
-    border-width: 1px;
+    //border-style: solid;
+    //border-width: 1px;
 }
 #bid_fields{
     width: 100%;
     margin: auto;
-    border-style: solid;
-    border-width: 1px;
+    //border-style: solid;
+    //border-width: 1px;
     
 }
 .surround{
@@ -126,16 +145,16 @@
 }
 #bid_text_field{
     display: inline-block;
-    border-style: solid;
-    border-width: 1px;
+    //border-style: solid;
+    //border-width: 1px;
     margin-left: 15%;
     width: 150px;
 }
 #bid_button{
     display: inline-block;
-    border-style: solid;
+    //border-style: solid;
     margin: auto 0px;
-    border-width: 1px;
+    //border-width: 1px;
 }
 #watch{
     text-align: right;
@@ -143,7 +162,7 @@
 .description_box{
     margin: 2px;
     width: auto;
-    border-style: solid;
-    border-width: 1px;
+    //border-style: solid;
+    //border-width: 1px;
     margin: 5px 10px;
 }
