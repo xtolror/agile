@@ -1,3 +1,6 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
 #site_container{
     width: 75%;
     margin: 0px auto;
@@ -20,6 +23,14 @@
     border-style: solid;
     border-width: 1px;
     margin: 2px auto;
+}
+#placeholder_text{
+    margin: 10px auto;
+    font-size: 300%;
+    vertical-align: middle;
+    text-align: center;
+    height: 100%;
+    width: 100%;
 }
 .watch_list{
     width: 15%;
@@ -73,4 +84,66 @@
 }    
 .time_till{
     float: right;
+}
+//Show CSS
+.show_top{
+    margin: 2px;
+    width: calc(100% - 8px);
+    border-style: solid;
+    border-width: 1px;
+}
+.image_display{
+    margin: auto;
+    width: calc(50% - 10px);
+    height: auto;
+    display: inline-block;
+    border-style: solid;
+    border-width: 1px;
+}
+#image_surround{
+    width: 300px;
+    margin: auto;
+}
+.bid_box{
+    margin: 2px;
+    width: calc(50% - 10px);
+    height: 100%;
+    vertical-align: middle;
+    display: inline-block;
+    border-style: solid;
+    border-width: 1px;
+}
+#bid_fields{
+    width: 100%;
+    margin: auto;
+    border-style: solid;
+    border-width: 1px;
+    
+}
+.surround{
+    width: 95%;
+    margin: auto;
+}
+#bid_text_field{
+    display: inline-block;
+    border-style: solid;
+    border-width: 1px;
+    margin-left: 15%;
+    width: 150px;
+}
+#bid_button{
+    display: inline-block;
+    border-style: solid;
+    margin: auto 0px;
+    border-width: 1px;
+}
+#watch{
+    text-align: right;
+}
+.description_box{
+    margin: 2px;
+    width: auto;
+    border-style: solid;
+    border-width: 1px;
+    margin: 5px 10px;
 }

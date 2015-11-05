@@ -7,10 +7,12 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div id="site_container">
     <%= render 'layouts/header' %>
     <div class="container">
       <div class="charity_banner">
+        <div id="placeholder_text">
+          Charity Banner
+        </div>
         
       </div>
       <div class="watch_list">
@@ -20,6 +22,5 @@
         <%= yield %>
       </div>
     </div>
-  </div>
 </body>
 </html>

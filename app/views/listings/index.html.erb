@@ -12,9 +12,9 @@
       <div class="item_head">
         <strong><%= link_to listing.name, listing %></strong>
       </div><br>
-        Start Bid: <%= number_to_currency(listing.start_bid, precision: 2) %>
+        Start Bid: <strong><%= number_to_currency(listing.start_bid, precision: 2) %></strong>
         <div class="time_till">
-          Auction starts in [TIME_TILL_AUCTION]
+          Auction starts in <%= get_days(Time.now.utc) %> day(s) and <%= get_minutes(Time.now.utc) %> minutes.
         </div>
     </div>
     <%= link_to "Delete", listing, method: :delete, data: {confirm: "Are you sure?"} %>
